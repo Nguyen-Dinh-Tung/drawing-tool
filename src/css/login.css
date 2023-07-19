@@ -1,0 +1,73 @@
+.login-form {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #e0fbfc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10%;
+}
+
+.facebook-logo {
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: 1px solid #dddfe2;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative; /* Thêm thuộc tính position: relative */
+}
+
+.btn-primary.loading::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 0.2rem solid #ffffff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #1c1e21;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
